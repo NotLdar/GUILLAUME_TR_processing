@@ -1,4 +1,4 @@
-PVector pos = new PVector(0, 0);
+PVector pos = new PVector(random(0, 600), random(0,600));  
 int dirX = 1;
 int dirY = 1;
 void setup ()
@@ -17,6 +17,7 @@ void setup ()
    background(100);
    pos = new PVector(pos.x+dirX, pos.y+dirY);
    ellipse(pos.x, pos.y, 50 , 50);
+  
    if (pos.x <= 0)
     dirX = 1;
    else if (pos.x >= width)
