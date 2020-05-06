@@ -15,16 +15,18 @@ void setup ()
    
    fill(0, 0, 255);
    background(100);
-   pos = new PVector(pos.x+1, pos.y+1);
+   pos = new PVector(pos.x+dirX, pos.y+dirY);
    ellipse(pos.x, pos.y, 50 , 50);
    if (pos.x <= 0)
     dirX = 1;
    else if (pos.x >= width)
     dirX = -1;
   
+  
+  
    if (pos.y <= 0)
-      dirY = 1
+      dirY = 1;
    else if (pos.y >= height)
       dirY = -1;
-     
+   
  }
